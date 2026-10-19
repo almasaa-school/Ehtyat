@@ -59,24 +59,24 @@ const PAGES=[['home','🏫 الرئيسية'],['abs','🚫 الغياب'],['dist
 const THEMES={light:'🍎 فاتح',dark:'🌙 داكن',edu:'📚 تربوي أخضر',royal:'🏛️ ملكي',warm:'☀️ دافئ',board:'🧑‍🏫 السبورة',ocean:'🌊 المحيط',library:'📖 المكتبة',alert:'⏱️ الاحتياط والطوارئ'};
 
 /* ===== INITIAL DATA ===== */
-// كل مجموعة: [التخصص, أسماء...]، والاسم الذي يبدأ بـ * هو "معلم أول"
+‎// كل مجموعة: [التخصص, أسماء...]، والاسم الذي يبدأ بـ * هو "معلم أول"
 const RAW=[
-['التربية الإسلامية','يحيى عبدالله سليمان السابعي','علي الغساني','بدر بطي راشد القاسمي','علي الشيادي','احمد محمد عبيد السعدي','سلطان ناصر سيف الربيعي','سمير خميس غابش الخميسى'],
-['اللغة العربية','ناصر الغذائي','نبيل المقيالي','عامر سليمان حميد السعيدى','شهاب العلوي','محمد عامر فاضل السعدى','ابراهيم القرني','سلطان الصالحي','ماجد سعيد على الشحى','عمر ناصر سالم المسعودي','طاهر رامس حمود القعنونى','ابراهيم مصبح كوهيه السعدي'],
-['اللغة الإنجليزية','سعيد محمد على الغذائي','حمد صالح حمدان البلوشى','احمد حميد سيف هاشل المخمرى','سيف الدين بن يونس الحاجي','طلال القادري','موسى على سليمان الغافرى','ماجد البلوشي'],
-['الرياضيات','محمد سالم على البلوشي','سعيد مبارك عبدالله البلوشي','سلطان حميد راشد الغافرى','شريف الصالحي','عمرو عبدالعالم محمد محمود','مروان العادل','محمد محمود احمد محمد','عمرو عبدالعال محمد محمود','احمد ناجي محمد عرفات','حكيم مسعود','صلاح زين السيد','وائل محسن','أميل منير'],
-['العلوم','عبدالعزيز الغداني','عبدالله الخميسي','عمار راشد صغير سعيد الصالحي','فريد المقبالي','مخلد سالم هاشل سيف العوادي','سعد السعدي','سالم محمد حمد المجيهولي'],
-['الدراسات الاجتماعية','بدر سيف خميس الغافري','ماجد سعيد هلال الحوسنى','فوزي عبدالله سعيد الصالحي','ماجد الجنبي','محمد القريني','بدر زايد سيف الصالحي'],
-['الفنون التشكيلية','محمد شاكر','*عبدالعزيز محمد صالح البلوشى'],
-['المهارات الموسيقية','هشام صالح منجود صالح'],
-['الرياضة المدرسية','ياسر صغير مبارك الرشيدى','جاسم البلوشي'],
-['تقنية المعلومات','*ناصر سعيد صالح المسعودي','حمد محمد خميس البادي'],
-['المهارات الحياتية','*عادل ناعم راشد الشيدي'],
-['الكيمياء','ناصر سيف سعيد المقيالي'],
-['الأحياء','وضاح راشد بريك الحوسنى'],
-['غير محدد','معاذ محمد سالم الجهوري','عبدالعزيز عبدالله سيف الجهوري','عدنان علي محمد المرزوقي','بدر الرشيدي']
+‎['التربية الإسلامية','يحيى عبدالله سليمان السابعي','علي الغساني','بدر بطي راشد القاسمي','علي الشيادي','احمد محمد عبيد السعدي','سلطان ناصر سيف الربيعي','سمير خميس غابش الخميسى'],
+‎['اللغة العربية','ناصر الغذائي','نبيل المقيالي','عامر سليمان حميد السعيدى','شهاب العلوي','محمد عامر فاضل السعدى','ابراهيم القرني','سلطان الصالحي','ماجد سعيد على الشحى','عمر ناصر سالم المسعودي','طاهر رامس حمود القعنونى','ابراهيم مصبح كوهيه السعدي'],
+‎['اللغة الإنجليزية','سعيد محمد على الغذائي','حمد صالح حمدان البلوشى','احمد حميد سيف هاشل المخمرى','سيف الدين بن يونس الحاجي','طلال القادري','موسى على سليمان الغافرى','ماجد البلوشي'],
+‎['الرياضيات','محمد سالم على البلوشي','سعيد مبارك عبدالله البلوشي','سلطان حميد راشد الغافرى','شريف الصالحي','عمرو عبدالعالم محمد محمود','مروان العادل','محمد محمود احمد محمد','عمرو عبدالعال محمد محمود','احمد ناجي محمد عرفات','حكيم مسعود','صلاح زين السيد','وائل محسن','أميل منير'],
+‎['العلوم','عبدالعزيز الغداني','عبدالله الخميسي','عمار راشد صغير سعيد الصالحي','فريد المقبالي','مخلد سالم هاشل سيف العوادي','سعد السعدي','سالم محمد حمد المجيهولي'],
+‎['الدراسات الاجتماعية','بدر سيف خميس الغافري','ماجد سعيد هلال الحوسنى','فوزي عبدالله سعيد الصالحي','ماجد الجنبي','محمد القريني','بدر زايد سيف الصالحي'],
+‎['الفنون التشكيلية','محمد شاكر','*عبدالعزيز محمد صالح البلوشى'],
+‎['المهارات الموسيقية','هشام صالح منجود صالح'],
+‎['الرياضة المدرسية','ياسر صغير مبارك الرشيدى','جاسم البلوشي'],
+‎['تقنية المعلومات','*ناصر سعيد صالح المسعودي','حمد محمد خميس البادي'],
+‎['المهارات الحياتية','*عادل ناعم راشد الشيدي'],
+‎['الكيمياء','ناصر سيف سعيد المقيالي'],
+‎['الأحياء','وضاح راشد بريك الحوسنى'],
+‎['غير محدد','معاذ محمد سالم الجهوري','عبدالعزيز عبدالله سيف الجهوري','عدنان علي محمد المرزوقي','بدر الرشيدي']
 ];
-// جدول تجريبي عشوائي ثابت (seeded) ليعمل التوزيع فور التشغيل؛ استبدله بجداولك عبر "لصق CSV"
+‎// جدول تجريبي عشوائي ثابت (seeded) ليعمل التوزيع فور التشغيل؛ استبدله بجداولك عبر "لصق CSV"
 function demoSchedule(seed){
   let s=seed*9301+49297;const r=()=>(s=(s*9301+49297)%233280)/233280;
   const sch={};
@@ -106,7 +106,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const T=id=>S.teachers.find(t=>t.id==id);
 const dayOf=d=>ALLDAYS[new Date(d+'T12:00:00').getDay()];
 function toast(m,k='ok'){const e=document.createElement('div');e.textContent=m;e.style.background=k=='err'?'var(--dan)':k=='warn'?'var(--warn)':'var(--suc)';$('toast').appendChild(e);setTimeout(()=>e.remove(),3500);}
-// الاسم المختصر: أول كلمة + آخر كلمة (للجدول المدرسي فقط)، ويعود للكامل عند التكرار
+‎// الاسم المختصر: أول كلمة + آخر كلمة (للجدول المدرسي فقط)، ويعود للكامل عند التكرار
 function shortName(t){const f=n=>{const w=n.trim().split(/\s+/);return w.length>1?w[0]+' '+w[w.length-1]:n;};
   const s=f(t.name);return S.teachers.some(o=>o.id!=t.id&&f(o.name)==s)?t.name:s;}
 const busy=(t,d,p)=>!!(t.schedule[d]&&t.schedule[d][p]);
@@ -121,7 +121,7 @@ function currentPeriod(){const n=new Date(),m=n.getHours()*60+n.getMinutes();
   for(const p in S.times){const[a,b]=S.times[p].map(x=>+x.slice(0,2)*60+ +x.slice(3));if(m>=a&&m<=b)return +p;}return 0;}
 
 /* ===== ACTIONS (التوزيع والغياب) ===== */
-// المرشحون وفق القواعد الصارمة
+‎// المرشحون وفق القواعد الصارمة
 function candidates(r){
   const ab=T(r.absentId),st=S.settings,p=r.period,d=r.day,em=st.emergency;
   return S.teachers.filter(t=>{
@@ -156,7 +156,7 @@ function candidates(r){
   });
 }
 function assign(r){const c=candidates(r);if(!c.length)return false;r.substituteId=c[0].id;c[0].balance++;return true;}
-// إعادة توزيع كل الحصص الشاغرة في تاريخ معيّن
+‎// إعادة توزيع كل الحصص الشاغرة في تاريخ معيّن
 function redistributeEmpty(d){let ok=0,fail=0;S.reserves.filter(r=>r.date==d&&!r.substituteId).forEach(r=>assign(r)?ok++:fail++);return{ok,fail};}
 function createFor(t,d){const day=dayOf(d);
   Object.keys(t.schedule[day]||{}).forEach(p=>{
@@ -168,16 +168,16 @@ function distribute(){S.teachers.filter(t=>t.isAbsent).forEach(t=>createFor(t,da
 function toggleAbs(id){
   const t=T(id);t.isAbsent=!t.isAbsent;
   if(t.isAbsent){
-    // 1) إلغاء حصص احتياطه كبديل
+‎    // 1) إلغاء حصص احتياطه كبديل
     const mine=S.reserves.filter(r=>r.date==date&&r.substituteId==id);
     mine.forEach(r=>{r.substituteId=null;t.balance=Math.max(0,t.balance-1);});
     if(!S.absenceLog.some(x=>x.date==date&&x.teacherId==id))S.absenceLog.push({date,teacherId:id});
-    // 2) إنشاء حصصه هو ثم إعادة توزيع كل الشاغر
+‎    // 2) إنشاء حصصه هو ثم إعادة توزيع كل الشاغر
     createFor(t,date);
     const r=redistributeEmpty(date);
     toast(mine.length?`تم إلغاء ${mine.length} حصة وإعادة توزيعها`+(r.fail?` (تعذّر ${r.fail})`:''):'تم تسجيل الغياب',r.fail?'warn':'ok');
   }else{
-    // عودة المعلم: حذف حصصه وخفض أرصدة البدلاء
+‎    // عودة المعلم: حذف حصصه وخفض أرصدة البدلاء
     const rm=S.reserves.filter(r=>r.date==date&&r.absentId==id);
     rm.forEach(r=>{const s=T(r.substituteId);if(s)s.balance=Math.max(0,s.balance-1);});
     S.reserves=S.reserves.filter(r=>!(r.date==date&&r.absentId==id));
@@ -190,7 +190,7 @@ function setSub(i,v){const r=S.reserves[i],o=T(r.substituteId),n=v?T(v):null;
     if(c.length&&!confirm('⚠️ تنبيه تعارض:\n'+c.join('\n')+'\n\nهل تريد التعيين اليدوي رغم ذلك؟')){render();return;}
     if(c.length)toast('عُيّن يدوياً مع وجود تعارض: '+c[0],'warn');}
   if(o)o.balance=Math.max(0,o.balance-1);if(n)n.balance++;r.substituteId=n?n.id:null;save();render();}
-// كشف التعارض: حصة أساسية أو احتياط آخر في نفس الوقت، أو غياب المعلم
+‎// كشف التعارض: حصة أساسية أو احتياط آخر في نفس الوقت، أو غياب المعلم
 function conflictOf(t,r){const c=[];
   if(t.isAbsent)c.push('المعلم غائب');
   if(busy(t,r.day,r.period))c.push(`لديه حصة أساسية (${t.schedule[r.day][r.period]}) في الحصة ${r.period}`);
@@ -200,7 +200,7 @@ function rowWarn(r){const t=T(r.substituteId),c=t?conflictOf(t,r):[];return c.le
 function delRes(i){const r=S.reserves[i],s=T(r.substituteId);if(s)s.balance=Math.max(0,s.balance-1);S.reserves.splice(i,1);save();render();}
 function todayRes(){return S.reserves.map((r,i)=>({...r,i})).filter(r=>r.date==date).sort((a,b)=>a.absentId-b.absentId||a.period-b.period);}
 
-/* ===== واتساب ===== */
+‎/* ===== واتساب ===== */
 function waMsg(r){const s=T(r.substituteId),a=T(r.absentId);
   return `السلام عليكم أ. ${s.name}\n\nلديك حصة احتياط:\n📚 المادة: ${a.subject}\n👤 الغائب: ${a.name}\n📅 الحصة: ${r.period}${r.period==8?' (الحصة الأخيرة)':''}\n🏫 الصف: ${r.className}\n\n${S.labels.platform}`;}
 function waOne(i){const r=S.reserves[i],s=T(r.substituteId);if(!s)return toast('لا يوجد بديل','err');
@@ -269,30 +269,30 @@ set(){const st=S.settings;return `<div class="card"><h3>الثيم</h3>${Object.
   <br><br>شعار اليسار <input type="file" accept="image/*" onchange="setLogo('L',this.files[0])"> <button class="btn o" onclick="S.school.logoL=null;save();render()">إزالة</button>
   <p style="color:var(--mut)">الشعاران يظهران في الواجهة وفي ملفات PDF.</p></div>
   <div class="card"><h3>قواعد التوزيع</h3>
-  النصاب الكامل <input type="number" style="width:80px" value="${st.fullQuota}" onchange="S.settings.fullQuota=+this.value;save()">
-  الحد اليومي <input type="number" style="width:60px" value="${st.dailyLimit}" onchange="S.settings.dailyLimit=+this.value;save()"><br><br>
+‎  النصاب الكامل <input type="number" style="width:80px" value="${st.fullQuota}" onchange="S.settings.fullQuota=+this.value;save()">
+‎  الحد اليومي <input type="number" style="width:60px" value="${st.dailyLimit}" onchange="S.settings.dailyLimit=+this.value;save()"><br><br>
   <label><input type="checkbox" ${st.noBetween?'checked':''} onchange="S.settings.noBetween=this.checked;save()"> استبعاد من لديه حصة قبل/بعد/بين حصتين</label><br>
   <label><input type="checkbox" ${st.noAfter3?'checked':''} onchange="S.settings.noAfter3=this.checked;save()"> استبعاد من لديه 3 حصص متتالية</label><br>
   <label><input type="checkbox" ${st.balanceLast?'checked':''} onchange="S.settings.balanceLast=this.checked;save()"> موازنة الحصة الأخيرة</label><br>
   ${chk('emergency','🚨 وضع الطوارئ: حد يومي +1 وسقف +3 وبلا قيود التجاور والحد الأسبوعي')}${chk('spread','توزيع العبء على أكبر عدد من المعلمين في اليوم')}${chk('byLoad','الأفضلية لمن لديه حصص أساسية أقل')}${chk('sameSubject','تفضيل نفس التخصص')}${chk('knowsClass','تفضيل من يدرّس نفس الصف')}${chk('noConsec','منع حصتين احتياط متتاليتين للمعلم نفسه')}${chk('noP8Senior','استبعاد المعلم الأول من الحصة الأخيرة')}
   ${chk('onlyPresent','استبعاد من ليس لديه حصص أساسية في ذلك اليوم (غير متواجد)')}${chk('gradeFirst','تفضيل من يدرّس نفس المرحلة/الصف الدراسي')}
-  أقصى عدد حصص متتالية بعد الإسناد (0 = بلا حد) <input type="number" style="width:60px" value="${st.maxRun||0}" onchange="S.settings.maxRun=+this.value;save()"><br>
-  تخصصات مستثناة من الاحتياط (بفاصلة) <input value="${esc(st.excludeSubjects||'')}" onchange="S.settings.excludeSubjects=this.value;save()"><br>
-  نصاب الحصة الأخيرة (8) لكل معلم <input type="number" style="width:60px" value="${st.p8Quota}" onchange="S.settings.p8Quota=+this.value;save()"><br>الحد الأسبوعي للاحتياط (0 = بلا حد) <input type="number" style="width:70px" value="${st.maxWeekly||0}" onchange="S.settings.maxWeekly=+this.value;save()"></div>
+‎  أقصى عدد حصص متتالية بعد الإسناد (0 = بلا حد) <input type="number" style="width:60px" value="${st.maxRun||0}" onchange="S.settings.maxRun=+this.value;save()"><br>
+‎  تخصصات مستثناة من الاحتياط (بفاصلة) <input value="${esc(st.excludeSubjects||'')}" onchange="S.settings.excludeSubjects=this.value;save()"><br>
+‎  نصاب الحصة الأخيرة (8) لكل معلم <input type="number" style="width:60px" value="${st.p8Quota}" onchange="S.settings.p8Quota=+this.value;save()"><br>الحد الأسبوعي للاحتياط (0 = بلا حد) <input type="number" style="width:70px" value="${st.maxWeekly||0}" onchange="S.settings.maxWeekly=+this.value;save()"></div>
   <div class="card"><h3>☁️ Google Drive</h3>Client ID <input style="width:100%" value="${esc(S.drive.clientId)}" placeholder="xxxx.apps.googleusercontent.com" onchange="S.drive.clientId=this.value.trim();save()"><br><br>
-  معرّف مجلد Drive (اختياري) <input style="width:100%" value="${esc(S.drive.folderId)}" onchange="S.drive.folderId=this.value.trim();S.drive.fileId='';save()"><br>
+‎  معرّف مجلد Drive (اختياري) <input style="width:100%" value="${esc(S.drive.folderId)}" onchange="S.drive.folderId=this.value.trim();S.drive.fileId='';save()"><br>
   <label><input type="checkbox" ${S.drive.auto?'checked':''} onchange="S.drive.auto=this.checked;save()"> حفظ تلقائي بعد كل تغيير</label><br>
   <button class="btn g" onclick="driveConnect()">🔗 ربط وحفظ الآن</button><button class="btn o" onclick="driveLoad()">⬇️ استرجاع من Drive</button>
   <p style="color:var(--mut)">${S.drive.last?'آخر حفظ: '+esc(S.drive.last):'لم يُحفظ بعد'}<br>الإعداد: Google Cloud ← فعّل Drive API ← أنشئ OAuth Client (Web) ← أضف رابط موقعك في Authorized JavaScript origins.</p></div>
   <div class="card"><button class="btn" onclick="expJSON()">تصدير JSON</button><button class="btn o" onclick="$('imp').click()">استيراد JSON</button>
   <input type="file" id="imp" accept=".json" hidden onchange="impJSON(this.files[0])"><button class="btn d" onclick="resetAll()">مسح الكل</button></div>`;}
 };
-/* ===== المودال ===== */
+‎/* ===== المودال ===== */
 function openModal(h){$('modal').innerHTML='<div class="mb"><div class="mc">'+h+'</div></div>';$('modal').firstChild.onclick=e=>{if(e.target.className=='mb')closeModal();};}
 function closeModal(){$('modal').innerHTML='';}
 const chk=(k,l)=>`<label><input type="checkbox" ${S.settings[k]?'checked':''} onchange="S.settings['${k}']=this.checked;save()"> ${l}</label><br>`;
 
-/* ===== الجدول المدرسي (5×8) ===== */
+‎/* ===== الجدول المدرسي (5×8) ===== */
 let ttT='';
 R.tt=()=>{
   const t=ttT?T(ttT):null,wd=dayOf(date);
@@ -315,7 +315,7 @@ function cellModal(d,p){
   <button class="btn g" onclick="setCell($('nt').value,'${d}',${p},$('nc').value)">إضافة</button><button class="btn o" onclick="closeModal()">إغلاق</button>`);}
 function setCell(id,d,p,v){const t=T(id);if(!t)return;t.schedule[d]=t.schedule[d]||{};v=String(v).trim();if(v)t.schedule[d][p]=v;else delete t.schedule[d][p];save();render();cellModal(d,p);}
 
-/* ===== بحث بالصف: من مع الصف الآن؟ ===== */
+‎/* ===== بحث بالصف: من مع الصف الآن؟ ===== */
 let clsD=DAYS.includes(dayOf(today()))?dayOf(today()):DAYS[0],clsP=1,clsC='';
 function clsNow(){date=today();clsD=DAYS.includes(dayOf(date))?dayOf(date):DAYS[0];clsP=currentPeriod()||1;render();}
 function whoTxt(d,p,c){
@@ -334,7 +334,7 @@ R.cls=()=>{
   <div class="card"><table>${list.map(c=>`<tr><td><b>${esc(c)}</b></td><td style="white-space:normal">${whoTxt(clsD,clsP,c)}</td></tr>`).join('')||'<tr><td>لا توجد حصص في هذا الوقت</td></tr>'}</table><small style="color:var(--mut)">الاحتياط معروض لتاريخ ${date}</small></div>
   <div class="card"><b>المتفرغون في هذه الحصة (${free.length}):</b><br>${free.map(t=>`<span class="tag">${esc(t.name)}</span>`).join('')}</div>`;};
 
-/* ===== قيود المعلم والأنصبة ===== */
+‎/* ===== قيود المعلم والأنصبة ===== */
 function tModal(id){const t=T(id);
   openModal(`<h3>${esc(t.name)}</h3>
   <label>الاسم <input id="m_n" value="${esc(t.name)}"></label><br><label>التخصص <input id="m_s" value="${esc(t.subject)}"></label>
@@ -343,13 +343,13 @@ function tModal(id){const t=T(id);
   <label><input type="checkbox" id="m_e" ${t.exempt?'checked':''}> معفى من الاحتياط</label><br>إعفاء مؤقت من <input type="date" id="m_f" value="${t.exFrom||''}"> إلى <input type="date" id="m_x" value="${t.exTo||''}"><br>
   <label><input type="checkbox" id="m_r" ${t.lastResort?'checked':''}> آخر خيار (لا يُرشَّح إلا عند عدم وجود غيره)</label><br>
   <label>حصص ممنوعة (مثل 1,8) <input id="m_p" value="${(t.noPeriods||[]).join(',')}" style="width:100px"></label><br>
-  أيام ممنوعة: ${DAYS.map(d=>`<label><input type="checkbox" class="m_d" value="${d}" ${(t.noDays||[]).includes(d)?'checked':''}>${d}</label>`).join(' ')}<br><br>
+‎  أيام ممنوعة: ${DAYS.map(d=>`<label><input type="checkbox" class="m_d" value="${d}" ${(t.noDays||[]).includes(d)?'checked':''}>${d}</label>`).join(' ')}<br><br>
   <button class="btn g" onclick="saveT(${id})">حفظ</button><button class="btn o" onclick="closeModal()">إغلاق</button>`);}
 function saveT(id){const t=T(id);t.name=$('m_n').value||t.name;t.subject=$('m_s').value;t.type=$('m_t').value;t.customLimit=+$('m_l').value;t.p8Limit=+$('m_8').value;
   t.exempt=$('m_e').checked;t.exFrom=$('m_f').value;t.exTo=$('m_x').value;t.lastResort=$('m_r').checked;t.noPeriods=$('m_p').value.split(/[,،\s]+/).map(Number).filter(Boolean);
   t.noDays=[...document.querySelectorAll('.m_d:checked')].map(x=>x.value);save();closeModal();render();toast('تم حفظ القيود');}
 function setLimit(id,v){T(id).customLimit=v===''?null:+v;save();render();}
-// الأقل حصصاً أساسية ← نصاب احتياط أكبر (من 40% إلى 100% من النصاب الكامل)
+‎// الأقل حصصاً أساسية ← نصاب احتياط أكبر (من 40% إلى 100% من النصاب الكامل)
 function autoQuota(){const mx=Math.max(1,...S.teachers.map(baseCount));
   S.teachers.forEach(t=>{const k=.4+.6*(mx-baseCount(t))/mx;t.customLimit=Math.max(1,Math.round(S.settings.fullQuota*k*(t.type=='معلم أول'?S.settings.seniorFactor:1)));});
   save();render();toast('تم احتساب الأنصبة: الأقل حصصاً ← نصاب أكبر');}
@@ -364,7 +364,7 @@ function render(keepFocus){
 }
 function go(p){page=p;q='';render();scrollTo(0,0);}
 
-/* ===== أفعال متفرقة ===== */
+‎/* ===== أفعال متفرقة ===== */
 function shareAbs(){const a=S.teachers.filter(t=>t.isAbsent);if(!a.length)return toast('لا يوجد غائبون','warn');
   window.open('https://wa.me/?text='+encodeURIComponent(`🚫 الغائبون ${date}:\n`+a.map((t,i)=>`${i+1}. ${t.name} (${t.subject})`).join('\n')),'_blank');}
 function delT(id){if(!confirm('حذف المعلم؟'))return;S.teachers=S.teachers.filter(t=>t.id!=id);S.reserves=S.reserves.filter(r=>r.absentId!=id&&r.substituteId!=id);save();render();}
@@ -423,7 +423,7 @@ async function sharePdf(){try{
   else{dlPdf();window.open('https://wa.me/?text='+encodeURIComponent('📎 جدول الاحتياط '+date+' (أرفق الملف الذي نُزِّل)'),'_blank');}}
   catch(e){if(e.name!='AbortError')toast('تعذّرت المشاركة — استخدم التنزيل','err');}}
 
-/* ===== الحصة 8 + التحليل + PDF للإحصائيات ===== */
+‎/* ===== الحصة 8 + التحليل + PDF للإحصائيات ===== */
 function p8LimitOf(t){return t.p8Limit??S.settings.p8Quota;}
 function setP8(id,v){T(id).p8Limit=v===''?null:+v;save();render();}
 const uniq=a=>[...new Set(a)];
@@ -488,7 +488,7 @@ async function driveLoad(){if(!dTok)return driveAuth(driveLoad);
     S=n;S.settings=Object.assign({},defaults().settings,S.settings);S.drive=Object.assign({},defaults().drive,S.drive,keep);
     try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}setTheme(S.theme||'light');toast('تم الاسترجاع من Drive');}catch(e){toast('فشل الاسترجاع: '+e.message,'err');}}
 
-/* ===== الواجهات والشعارات والاعتمادات ===== */
+‎/* ===== الواجهات والشعارات والاعتمادات ===== */
 const DESIGNER='أحمد بن عبدالله العلي',PRINCIPAL='الدكتور حسن بن علي البلوشي';
 const THICON={light:'🍎',dark:'🌙',edu:'📚',royal:'🏛️',warm:'☀️',board:'🧑‍🏫',ocean:'🌊',library:'📖',alert:'⏱️'};
 const prin=()=>S.school.principal||PRINCIPAL;
